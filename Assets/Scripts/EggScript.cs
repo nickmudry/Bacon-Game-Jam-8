@@ -53,7 +53,7 @@ public class EggScript : MonoBehaviour {
         speed = 10;
     }
 
-    void OnTriggerEnter(Collider trg)
+    void OnCollisionEnter2D(Collider2D trg)
     {
         if (trg.collider.tag == "player2scores")
         {
