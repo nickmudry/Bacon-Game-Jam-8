@@ -4,7 +4,8 @@ using System.Collections;
 public class EggScript : MonoBehaviour {
 
     public GameObject yolkandstuff;
-    public GameObject sm;
+    public GameObject sm; //ScoreManager ??? 
+	GameObject eggSpawner;
 
     public float speed = 10;
     public float durability = 100;
@@ -18,7 +19,12 @@ public class EggScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         eggSprite = gameObject.GetComponent<SpriteRenderer>();
-        rigidbody2D.velocity = Vector2.one.normalized * speed;
+		rigidbody2D.velocity = new Vector2(Random.Range(-5F, 5F) * speed, Random.Range(-.75F, .75F) * speed);
+		eggSpawner = GameObject.Find ("EggSpawner");
+		if (sm == null)
+		{
+			sm = GameObject.Find ("ScoreManager");
+		}
 	}
 
     void Update()
@@ -49,19 +55,26 @@ public class EggScript : MonoBehaviour {
     void RefreshSpeed()
     {
         Debug.Log("egghit");
-        durability -= Random.Range(10F, 15F);
+        durability -= Random.Range(20F, 25F);
         speed = 10;
     }
 
-    void OnCollisionEnter2D(Collider2D trg)
+
+    void OnCollisionEnter2D(Collision2D trg)
     {
         if (trg.collider.tag == "player2scores")
         {
             sm.SendMessage("P2Increase");
+			if (eggSpawner.GetComponent<EggSpawnerScript>().gameOver == false)
+				eggSpawner.SendMessage("Spawn");
+			Destroy(gameObject); 
         }
         if (trg.collider.tag == "player1scores")
         {
             sm.SendMessage("P1Increase");
+			if (eggSpawner.GetComponent<EggSpawnerScript>().gameOver == false)
+				eggSpawner.SendMessage("Spawn");
+			Destroy(gameObject);
         }
     }
 }

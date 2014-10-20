@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.88273144, y: -1.38654041, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,7 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yolkandstuff: {fileID: 100000, guid: f90d6bd734d0de74cb69178746593e34, type: 2}
-  speed: 5
+  sm: {fileID: 0}
+  speed: 10
   durability: 100
   crack1: {fileID: 21300000, guid: 17560952235bf0e439b1df5d6b2728e3, type: 3}
   crack2: {fileID: 21300000, guid: 636778a8f584eb8449faf71040806966, type: 3}
