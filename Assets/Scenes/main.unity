@@ -125,6 +125,7 @@ GameObject:
   - 50: {fileID: 390997817}
   - 60: {fileID: 390997816}
   - 114: {fileID: 390997815}
+  - 82: {fileID: 390997820}
   m_Layer: 0
   m_Name: egg
   m_TagString: egg
@@ -242,6 +243,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!82 &390997820
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8200000, guid: 5a8ac1cfcb5f2c846b94e7a3b38b4f6d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1386331653}
+  m_GameObject: {fileID: 390997814}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 8300000, guid: 41c1dba27ba38e64ba65c1847adbb965, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &540453097
 GameObject:
   m_ObjectHideFlags: 0
@@ -351,6 +411,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: .200000003
   isPlayerOne: 1
+  player1sound: {fileID: 0}
+  player2sound: {fileID: 0}
 --- !u!1 &668381194
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,6 +835,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: .200000003
   isPlayerOne: 0
+  player1sound: {fileID: 0}
+  player2sound: {fileID: 0}
 --- !u!1 &1966711927
 GameObject:
   m_ObjectHideFlags: 0
