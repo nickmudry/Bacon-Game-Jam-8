@@ -32,7 +32,7 @@ public class ScoreManagerScript : MonoBehaviour {
 		}
 		if (Input.GetKeyDown(KeyCode.Z))
 		{
-			Application.CaptureScreenshot("Screenshots/BaconDuel-" + System.DateTime.Today.ToLongTimeString() + ".png");
+			Application.CaptureScreenshot("Screenshots/BaconDuel-" + System.DateTime.Today.Hour + System.DateTime.Today.Millisecond + System.DateTime.Today.Second + System.DateTime.Today.Ticks + System.DateTime.Today.Hour + System.DateTime.Today.Minute + Random.Range(0f,10000f) + ".png");
 		}
 
 	}
