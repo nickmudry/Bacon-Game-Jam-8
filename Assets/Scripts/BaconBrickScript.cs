@@ -5,6 +5,9 @@ public class BaconBrickScript : MonoBehaviour {
 	public float moveSpeed = .2f; //Movement speed for the bacon brick.
 	public bool isPlayerOne;
 
+    public GameObject player1sound;
+    public GameObject player2sound;
+
 	void Start () {
 	
 	}
@@ -48,6 +51,14 @@ public class BaconBrickScript : MonoBehaviour {
     {
         if (col.collider.tag == "egg")
         {
+            if (isPlayerOne)
+            {
+                player1sound.audio.Play();
+            }
+            else if (!isPlayerOne)
+            {
+                player2sound.audio.Play();
+            }
             col.gameObject.SendMessage("RefreshSpeed");
         }
     }

@@ -44,11 +44,13 @@ public class ScoreManagerScript : MonoBehaviour {
 
     void P1Increase()
     {
+        audio.Play();
         player1score += 1;
     }
 
     void P2Increase()
     {
+        audio.Play();
         player2score += 1;
     }
 }

@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   yolkandstuff: {fileID: 0}
+  sm: {fileID: 0}
   speed: 0
   durability: 100
   crack1: {fileID: 0}
