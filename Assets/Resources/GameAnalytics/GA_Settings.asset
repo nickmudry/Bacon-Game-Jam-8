@@ -11,13 +11,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d0c0342116464e26abb476a494c827a, type: 3}
   m_Name: GA_Settings
   m_EditorClassIdentifier: 
-  TotalMessagesSubmitted: 0
+  TotalMessagesSubmitted: 12
   TotalMessagesFailed: 0
-  DesignMessagesSubmitted: 0
+  DesignMessagesSubmitted: 2
   DesignMessagesFailed: 0
   QualityMessagesSubmitted: 0
   QualityMessagesFailed: 0
-  ErrorMessagesSubmitted: 0
+  ErrorMessagesSubmitted: 10
   ErrorMessagesFailed: 0
   BusinessMessagesSubmitted: 0
   BusinessMessagesFailed: 0
@@ -25,19 +25,19 @@ MonoBehaviour:
   UserMessagesFailed: 0
   CustomArea: 
   TrackTarget: {fileID: 0}
-  GameKey: 
-  SecretKey: 
-  ApiKey: 
-  Build: 0.1
-  SignUpOpen: 1
+  GameKey: 05f3c9f3501c48f6d3dfc83b2b24b37b
+  SecretKey: 89c63ba30c7db7c8e42e9d31dde728196e4081d9
+  ApiKey: f77ed25537b10d09823791859714b14eb6b74889
+  Build: 1.0 Web
+  SignUpOpen: 0
   FirstName: 
   LastName: 
   StudioName: 
-  GameName: 
+  GameName: Bacon Duel
   PasswordConfirm: 
   EmailOptIn: 1
-  EmailGA: 
-  IntroScreen: 1
+  EmailGA: angryfacing@gmail.com
+  IntroScreen: 0
   DebugMode: 1
   DebugAddEvent: 0
   SendExampleGameDataToMyGame: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   HeatmapGridSize: {x: 1, y: 1, z: 1}
   CustomUserID: 0
   SubmitInterval: 10
-  InternetConnectivity: 0
+  InternetConnectivity: 1
   Start_AlwaysShowAds: 1
   Start_TimePlayed: 0
   Start_Sessions: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   Trigger_SceneChange: 1
   Trigger_SceneChange_network: 0
   IAD_foldout: 1
-  IAD_enabled: 1
+  IAD_enabled: 0
   CB_enabled: 0
   IAD_type: 0
   IAD_layout: 0
@@ -71,10 +71,10 @@ MonoBehaviour:
   CB_foldout: 1
   CB_appID: 
   CB_appSig: 
-  CurrentInspectorState: 0
+  CurrentInspectorState: 1
   ClosedHints: 
   DisplayHints: 0
   DisplayHintsScrollState: {x: 0, y: 0}
-  Logo: {fileID: 0}
-  UpdateIcon: {fileID: 0}
+  Logo: {fileID: 2800000, guid: 98df8f9c5678a4e5d964caa1244e8958, type: 3}
+  UpdateIcon: {fileID: 2800000, guid: 810bbb19deed24f3cb7b854f9bafde26, type: 3}
   CustomAdTriggers: []
